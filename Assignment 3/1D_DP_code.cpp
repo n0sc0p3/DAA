@@ -1,30 +1,4 @@
-#include <iostream>
-#include <string>
-#include <vector>
-#include <algorithm>
-#include <sstream>
-#include <queue>
-#include <deque>
-#include <bitset>
-#include <chrono>
-#include <iterator>
-#include <list>
-#include <stack>
-#include <map>
-#include <set>
-#include <functional>
-#include <numeric>
-#include <utility>
-#include <limits>
-#include <time.h>
-#include <math.h>
-#include <cmath>
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
-#include <assert.h>
-#include <iterator>
-#include <unordered_set>
+#include<bits/stdc++.h>
 using namespace std;
 using namespace std::chrono;
 #define fo(i, n) for (i = 0; i < n; i++)
@@ -41,7 +15,7 @@ long long findLength(string str, long long int n)
     for (long long i = 0; i < n; i++) {
   
         current_sum += (str[i] == '0' ? 1 : -1);
-  
+        current_length++;
         if (current_sum < 0){
             current_sum = 0;
             current_length = 0;
